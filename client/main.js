@@ -1,4 +1,4 @@
-import { Template } from 'meteor/templating';
+﻿import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
@@ -35,5 +35,5 @@ Template.BUTTON.events({
 	var numbersField = document.getElementById("field_of_numbers").value;
 	if (lettersField.length === 2 && numbersField.length === 7) {
 		alert("Ваши данные приняты c:");
-	}
+}	}
 });
