@@ -1,0 +1,30 @@
+<head>
+  <title>test</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <form action="#"> 
+  {{> SERIES}}      
+  {{> NUMBER}}
+  {{> BUTTON}}
+  </form>
+</body>
+
+<template name="BUTTON">
+  <button class="forbutton">Отправить</button>
+</template>
+
+<template name="SERIES">
+  <p class="forseries"> 
+        <label for="series" style="padding-top:8px; font-size: 25.7px">Серия паспорта:</label> 
+        <input id="field_of_letters" autocomplete="off" minlength="2" maxlength="2" style="width: 200px; height: 35px; text-transform: uppercase;" type="text" placeholder="AB" autofocus required>
+      </p>
+</template>
+
+<template name="NUMBER">
+  <p class="fornumber">
+        <label for="number" style="padding-top:8px; font-size: 25px">Номер паспорта:</label> 
+        <input id="field_of_numbers" autocomplete="off" minlength="7" maxlength="7" style="width: 200px; height: 35px;" type="text" placeholder="1234567" required>
+      </p>
+</template>
